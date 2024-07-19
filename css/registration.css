@@ -1,0 +1,53 @@
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 10rem;
+    margin-right: 4rem;
+}
+
+.form_name {
+    display: flex;
+    gap: 1rem;
+    padding-left: 5rem;
+}
+
+.contact_form input[type="text"], 
+.contact_form input[type="email"],
+.contact_form input[type="number"] {
+    width: 50%;
+    /* border-radius: 5rem; */
+}
+
+input, textarea {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    /* color: #fDC93B; */
+    color: #fff;
+    /* background: rgb(21, 21, 100); */
+    background: green;
+    /* background: transparent; */
+}
+
+.form_class {
+    display: flex;
+    gap: 1rem;
+    margin-left: 5rem;
+}
+
+textarea {
+    width: 50%;
+    border: none;
+    outline: none;
+}
+
+select {
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: green;
+}

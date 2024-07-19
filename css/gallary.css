@@ -1,0 +1,23 @@
+.gallary {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    
+}
+
+.gallary > h1 {
+    color: green;
+}
+
+.gallary-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    /* margin-left: 0; */
+}
+
+.gallary-image > img {
+    width: 250px;
+    height: 350px;
+    border-radius: 1rem;
+}

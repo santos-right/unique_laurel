@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+/* Global Tags */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* color: rgb(35, 35, 85); */
+    color: green;
+}
+
+span {
+    font-size: .9rem;
+    /* color: #757373; */
+    color: burlywood;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+p {
+    color: burlywood;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    /* color: rgb(21, 21, 100); */
+    color: green;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: burlywood;
+}
+
+/* Home */
+
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/images/WhatsApp\ Image\ 2024-06-03\ at\ 15.08.23_268a9cab.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    /* margin-left: 1.5rem;
+    margin-right: 1.5rem; */
+}
+
+#home a.blue {
+    color: #fff;
+    /* background: rgb(21, 21, 100); */
+    background: green;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+    /* color:  rgb(21, 21, 100); */
+    color:  burlywood;
+    background: #fff;
+}
+
+#home a.Yellow {
+    color: #fff;
+    /* background: #fDC93B; */
+    background: burlywood;
+    transition: 0.3s ease;
+}
+
+#home a.Yellow:hover {
+    /* color:  rgb(21, 21, 100); */
+    color:  #fff;
+    background: green;
+}
+
+/* Features */
+
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background: #F9F9FF;
+    text-align: start;
+    padding: 1rem;
+}
+
+#features .fea-box .feature-font {
+    font-size: 2.3rem;
+    color: green;
+}
+
+#features .fea-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: green;
+    padding: 13px 0 7px 0;
+    text-transform: uppercase;
+}
+
+#features .fea-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: burlywood;
+}
+
+#course {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#course .course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    margin-top: 50px;
+}
+
+#course .courses {
+    text-align: start;
+    background: #F9F9FF;
+    height: 100%;
+    position: relative;
+}
+
+#course .courses img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses .details {
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details .star .star-font {
+    color: #fDC93B;
+    font-size: .9rem;
+}
+
+#course .courses .cost {
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+/* Registration */
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)), url("/images/WhatsApp\ Image\ 2024-06-03\ at\ 15.08.23_268a9cab.jpg");
+    width: 1005;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder {
+    color: #fff;
+}
+
+#registration .reminder h1 {
+    color: #fff;
+}
+
+#registration .reminder .time {
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .reminder .time .date {
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#registration .form {
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#registration .form input::placeholder {
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: cursive;
+}
+
+#registration .form .btn {
+    margin-top: 20px;
+}
+
+#registration .form a.yellow {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: #fDC93B;
+    transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover {
+    color:  rgb(21, 21, 100);
+    background: transparent;
+    border: 1px solid rgb(21, 21, 100);
+}
+
+/* experts */
+
+#experts {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+#experts .expert-box .profile {
+    background: #fff;
+    padding: 30px 10px;
+}
+
+#experts .expert-box .profile > img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    /* box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2); */
+    /* box-shadow:  #0000002a; */
+    transition: 1s ease;
+}
+
+#experts .expert-box .profile > img:hover {
+    border: .3rem 0 .5rem #0000002a;
+    /* transition: all ease 0.2s; */
+}
+
+.pro-links {
+    margin-top: 10px;
+}
+
+.pro-links .socials {
+    margin: 10px 10px;
+    /* padding: 10px 13px; */
+    /* border: 1px solid rgb(21, 21, 100); */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.pro-links .socials:hover {
+    /* background: rgb(21, 21, 100); */
+    color: rgb(21, 21, 100);
+    border: 1px solid #00000018;
+    cursor: pointer;
+    box-shadow: .3rem 0 .5rem #0000002a;
+}
+
+/* Footer */
+
+footer {
+    padding: 8vw;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover {
+    color: rgb(241, 240, 245);
+}
+
+footer p {
+    color: #7b838a;
+}
+
+footer .subscribe {
+    margin-top: 20px;
+}
+
+footer input {
+    width: 220px;
+    padding: 15px 12px;
+    background: burlywood;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscribe a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+footer .subscribe a.yellow {
+    color: #fff;
+    background: green;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+footer .copy-right {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copy-right p {
+    color: #fff;
+}
+
+footer .copy-right .pro-links {
+    margin-top: 0px;
+}
+
+footer .copy-right .pro-links .socials {
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s ease;
+}
+
+footer .copy-right .pro-links .socials:hover {
+    color: burlywood;
+}
